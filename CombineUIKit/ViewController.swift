@@ -68,8 +68,8 @@ class ViewController: UIViewController {
 	
 	@objc
 	func nextThirdButtonTapped() {
-		let thirdVC = UIHostingController(rootView: ThridView())
-		navigationController?.pushViewController(thirdVC, animated: true)
+		let swiftUIVC = UIHostingController(rootView: ContentView())
+		navigationController?.pushViewController(swiftUIVC, animated: true)
 	}
 	
 	func navigationToSecondViewController(storyboardName sbName: String, to navigation: UIViewController) {
@@ -128,7 +128,7 @@ class ViewController: UIViewController {
 	private let navigateThirdButton: UIButton = {
 		let button = UIButton()
 		button.backgroundColor = .systemPink
-		button.setTitle("Navigate to Third View", for: .normal)
+		button.setTitle("Navigate to SwiftUI View", for: .normal)
 		button.layer.cornerRadius = 10
 		return button
 	}()

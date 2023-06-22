@@ -35,9 +35,21 @@ final class ThridViewModel: ObservableObject {
 struct ThridView: View {
 	
 	@ObservedObject private var vm = ThridViewModel()
+	@EnvironmentObject var router: Router<AppRoute>
 	
 	var body: some View {
-		NavigationView {
+		VStack {
+			Button {
+				router.push(.FourView)
+			} label: {
+				Text("Click Me")
+					.padding()
+					.background(Color.gray)
+					.foregroundColor(.white)
+					.cornerRadius(10)
+				
+			}
+			
 			List {
 				Section(
 					header:
@@ -70,10 +82,9 @@ struct ThridView: View {
 				}
 			}
 			.accentColor(.purple)
-			.navigationBarTitle("Grocery List")
-			.navigationBarItems(leading: EditButton(), trailing: addButton)
 		}
-		.accentColor(.red)
+		.navigationBarTitle("Grocery List", displayMode: .inline)
+		.navigationBarItems(trailing: addButton)
 	}
 	
 	var addButton: some View {
@@ -86,8 +97,6 @@ struct ThridView: View {
 
 struct ThridViewBootcamp_Previews: PreviewProvider {
 	static var previews: some View {
-		NavigationView {
-			ThridView()
-		}
+		ThridView()
 	}
 }

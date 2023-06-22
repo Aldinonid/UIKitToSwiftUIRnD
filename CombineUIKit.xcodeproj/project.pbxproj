@@ -21,6 +21,8 @@
 		A5DFFFA92A3B099E0011D811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DFFFA82A3B099E0011D811 /* Assets.xcassets */; };
 		A5DFFFAC2A3B099E0011D811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DFFFAA2A3B099E0011D811 /* LaunchScreen.storyboard */; };
 		A5DFFFB82A3B79C40011D811 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFFFB72A3B79C40011D811 /* SecondViewController.swift */; };
+		A5E5CB682A4434E2000B3ED1 /* FourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5CB672A4434E2000B3ED1 /* FourView.swift */; };
+		A5E5CB6A2A44390D000B3ED1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5CB692A44390D000B3ED1 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		A5DFFFAB2A3B099E0011D811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5DFFFAD2A3B099E0011D811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DFFFB72A3B79C40011D811 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A5E5CB672A4434E2000B3ED1 /* FourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourView.swift; sourceTree = "<group>"; };
+		A5E5CB692A44390D000B3ED1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				A5DFFFA32A3B099C0011D811 /* ViewController.swift */,
 				A5DFFFB72A3B79C40011D811 /* SecondViewController.swift */,
 				A54E33822A4429F400880791 /* ThirdView.swift */,
+				A5E5CB692A44390D000B3ED1 /* Router.swift */,
+				A5E5CB672A4434E2000B3ED1 /* FourView.swift */,
 				A556A5FF2A3C223E0053C50C /* Second.storyboard */,
 				A556A5F02A3C19170053C50C /* TesTemplate */,
 				A5DFFFA82A3B099E0011D811 /* Assets.xcassets */,
@@ -171,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E5CB682A4434E2000B3ED1 /* FourView.swift in Sources */,
 				A556A5FA2A3C19340053C50C /* HomeInteractor.swift in Sources */,
 				A5DFFFB82A3B79C40011D811 /* SecondViewController.swift in Sources */,
 				A556A5FB2A3C19340053C50C /* HomeView.swift in Sources */,
+				A5E5CB6A2A44390D000B3ED1 /* Router.swift in Sources */,
 				A556A5F92A3C19340053C50C /* HomeRouter.swift in Sources */,
 				A556A5FC2A3C19340053C50C /* HomeEntity.swift in Sources */,
 				A5DFFFA42A3B099C0011D811 /* ViewController.swift in Sources */,
